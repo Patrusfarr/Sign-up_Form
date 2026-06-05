@@ -7,24 +7,65 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <p>My First Form</p>
+    <div class="background">
+        <div class="title-bar">
+            <img class="odin-logo" src="Images/Odin.png" alt="The Odin Project Logo">
+            <span class="title-text">Odin</span>
+        </div>
 
-    <form action="/my-handling-form-page" method="post">
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" value="by default this element is filled with this text"/>
-        </p>
-        <p>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message">by default this element is filled with this text</textarea>
-        </p>
-        <p class="button">
-            <button type="submit">Send your message</button>
-        </p>
-    </form>
+        <div class="photo-credit">
+            Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a> on <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="hook">
+            <span>
+                This is not a real online service! 
+                You know you need something like this in your life to realize you deepest dreams.
+                <br>
+                Sign up <em>now</em> to get started!
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </span>
+        </div>
+
+        <div class="form">
+            <span>Let's do this!<br></span>
+            <form id="form-id">
+                <div class="input_container">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name"/>
+                </div>
+                <div class="input_container">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name"/>
+                </div>
+                <div class="input_container">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="input_container">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" id="phone_number" name="phone_number"/>
+                </div>
+                <div class="input_container">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required minlength="8"/>
+                </div>
+                <div class="input_container">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="8"/>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="submission">
+            <button form="form-id" type="submit">Create Account</button>
+            <br>
+            <span class="log_in">Already have an account? <a>Log in</a></span>
+        </div>
+    </div>
   </body>
 </html>
